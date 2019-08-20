@@ -50,6 +50,7 @@ namespace WindowsFormsApplication1
             if (editCheck.Checked)
             {
                 results.ReadOnly = false;
+                results.Columns[0].ReadOnly = true;     //don't know why this column can become editable at some scenarios :/
                 fileStream = new System.IO.FileStream(openFileDialog.FileName, System.IO.FileMode.Open, System.IO.FileAccess.ReadWrite);
             }
             else

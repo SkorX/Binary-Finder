@@ -52,9 +52,9 @@ namespace WindowsFormsApplication1
             int resultCount = 0;
             string resultString = "";
 
-            //NORMAL METHOD
             try
             {
+                //NORMAL METHOD
                 if (!relativeCheck)
                 {
                     foreach (byte data in searchData)
